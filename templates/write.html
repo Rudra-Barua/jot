@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Write
+{% endblock %}
+
+{% block main %}
+    <form action="/write" method="post">
+        <div>
+            <input size="40" autocomplete="off" autofocus class="form-control" id="url" name="url" placeholder="Website" type="text">
+            <button class="btn btn-primary" type="button" id="update">Update</button>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                <div class="form-group">
+                    <textarea class="form-control" id="note" name="note" rows="10" placeholder="Note"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Note</button>
+            </div>
+            <div class="order-sm-first">
+                <iframe id="iframe" src="{{ iframe }}" height=700 width=780 frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </form>
+    <script>
+        var reply_click = function()
+        {
+            newurl = document.getElementById('url').value;
+            document.getElementById('iframe').src = newurl;
+        }
+        document.getElementById('update').onclick = reply_click;
+
+        window.onload = function() {
+            document.getElementById("url").value = "{{iframe}}";
+        };
+    </script>
+{% endblock %}

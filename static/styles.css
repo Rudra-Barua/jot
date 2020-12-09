@@ -1,0 +1,279 @@
+.jumbotron {
+    background: #0077b6;
+    color: floralwhite;
+    padding: 70px 30px;
+    margin: 0px auto;
+}
+
+.footer {
+    background-color: #90e0ef;
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+
+.row-header {
+    padding: 0px 0px;
+    margin: 0px auto;
+}
+
+.row-content {
+    padding: 50px 0px;
+    margin: 0px auto;
+    min-height: 400px;
+    border-bottom: 1px ridge;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: #023e8a;
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+.tab-content {
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* https://getbootstrap.com/docs/4.0/components/forms/ */
+main .form-control
+{
+    display: inline-block;
+    width: auto;
+}
+
+main
+{
+    overflow-x: auto;
+    text-align: center;
+}
+
+main img
+{
+    max-width: 100%;
+}
+
+.thumbnail iframe {
+    width: 1440px;
+    height: 900px;
+}
+
+.thumbnail-container {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: calc(1440px * 0.25);
+    height: calc(900px * 0.25);
+}
+
+.thumbnail {
+    position: relative;
+    -o-transform: scale(0.25);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.25);
+    -webkit-transform-origin: 0 0;
+    -ms-zoom: 0.25;
+    -moz-transform: scale(0.25);
+    -moz-transform-origin: 0 0;
+}
+
+.thumbnail:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.thumbnail iframe {
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+}
+#over {font-size:5em; top:20px; left:20px; z-index:2; position:absolute}
+
+/* https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    padding-top: 100px;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #4db6ac;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    background-color: #4db6ac;
+    color: white;
+    padding: 2px 16px;
+}
+
+.modal-content {
+    position: relative;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #90e0ef;
+}
+
+
+.header {
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    background-color: #4db6ac;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* https://www.w3schools.com/howto/howto_js_todolist.asp */
+.myUL {
+    margin: 0;
+    padding: 0;
+}
+
+.myLI {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    transition: 0.2s;
+}
+
+.myLI:hover {
+    background: #ddd;
+}
+
+.myLI:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.myInput {
+    margin: 0;
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    background: #d9d9d9;
+    color: #555;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+#newa:link {
+    color: black;
+}
+
+#newa:visited {
+    color: black;
+}
+
+#newa:hover {
+    color: #90e0ef;
+}
+
+#newa:active {
+    color: black;
+}
+
+.fabutton {
+    background: none;
+    padding: 0px;
+    border: none;
+}

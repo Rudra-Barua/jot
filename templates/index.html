@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Notebooks
+{% endblock %}
+
+{% block main %}
+    <h1>Notebooks</h1>
+    {% for notebook in notebooks %}
+        <div class="thumbnail-container container col-12 col-sm-4 col-md-3">
+            <div class="thumbnail">
+                <iframe src={{ notebook }} frameborder="0" scrolling="no" onload="var that=this;setTimeout(function() { that.style.opacity = 0.6 }, 50)"></iframe>
+                <a data-toggle="modal" data-target="#modaledit{{notebooks[notebook][2]}}" style="position:absolute; top:0; left:0; display:inline-block; width:1000px; height:1000px; z-index:5;"></a>
+                <h1 id="over"><b>{{ notebooks[notebook][1] }}</b></h1>
+            </div>
+        </div>
+        <div id="modaledit{{notebooks[notebook][2]}}" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a href="{{ notebook }}" target="_blank"><h1>{{ notebooks[notebook][1] }}</h1></a>
+                        <span class="close" data-dismiss="modal"><i class="fa fa-xl fa-times-circle"></i></span>
+                    </div>
+                    <div class="modal-body">
+                        <p align="left"><b>Website: {{ notebooks[notebook][0] }}</b></p>
+                        <p align="left"><b>Title: {{ notebooks[notebook][1] }}</b></p>
+                        {% for note in notebooks[notebook][3:] %}
+                            <p align="left">- {{ note }}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="modal-footer">
+                    <form action="/delete" method="post">
+                        <div class="form-group">
+                            <input type="hidden" value="{{ notebook }}" name="note"></input>
+                        </div>
+                        <button class="btn btn-danger btn-xs" type="submit" onclick="return confirm('Are you sure? This will delete all the notes for this website.')">Delete</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

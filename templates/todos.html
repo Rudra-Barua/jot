@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Todos
+{% endblock %}
+
+{% block main %}
+    <form action="/todos" method="post">
+        <div id="myDIV" class="header">
+            <h2 style="margin:5px">My To Do List</h2>
+            <input type="text" class="myInput" name="task" placeholder="Task">
+            <button type="submit" class="addBtn btn btn-primary">Add</button>
+            <input id="url" type="url" class="myInput" name="url" placeholder="Website">
+            <input class="myInput" type="datetime-local" id="meeting-time"name="timedate">
+        </div>
+    </form>
+
+    {% for todo in todos %}
+        <a id="newa" href="{{ todo }}" target="_blank"><h3>{{ todo }}</h3></a>
+        <ul class="myUL">
+        {% for task in todos[todo][2:] %}
+            <form action="/deletetodo" method="post">
+                <li class="myLI">{{task[0]}} ({{task[1]}}) <button type="submit" class="fabutton" id="{{task[3]}}">
+                <i class="fa fa-xl fa-times-circle"></i>
+                </button><input type="hidden" value="{{task[3]}}" name="task"></input></li>
+            </form>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+
+    <script>
+        window.onload = function() {
+            document.getElementById("url").value = "{{recent}}";
+        };
+    </script>
+{% endblock %}
