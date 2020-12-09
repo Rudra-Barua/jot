@@ -2,7 +2,7 @@ cs50
 Flask
 Flask-Session
 requests
-urllib
 bs4
+urllib.request
 gunicorn
 psycopg2
