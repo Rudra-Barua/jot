@@ -22,7 +22,7 @@ Users will also have access to these collections of notes to organize them as a 
 This web application was created using Python, Flask, HTML/CSS, JavaScript, and SQL
 
 ## Project Video:
-
+https://youtu.be/miZKIl55Z-w
 
 ## Implementation:
 (Initial steps can be skipped in using CS50 IDE)
