@@ -1,14 +1,14 @@
-# Project Title: Jot
+## Project Title: Jot
 # By: Rudra Barua
 Course: CS50 @ Harvard
 Assignment: Final Project
 Contact: rudrabarua@college.harvard.edu
 
-# Description:
+## Description:
 Jot is a web application that makes it convenient for users to write some notes that pertain to the content of a specific website. They can simply use this web app to open a link to website and jot down their notes. The web app also allows for users to create tasks or reminders for themselves for a specific website.
 Users will also have access to these collections of notes to organize them as a single session. This is perfect for the person with hundreds of tabs open or someone who just wants to jot quick/short notes without having to tab through sites.
 
-# Key Features:
+## Key Features:
 
 1. Pull up the website alonside the note taking area
 2. Change the website while taking notes  
@@ -16,16 +16,13 @@ Users will also have access to these collections of notes to organize them as a 
 4. Create todo lists with tasks, specific websites, and due dates 
 5. View all the todos grouped by their respective sites
 
-# Tools:
+## Tools:
 This web application was created using Python, Flask, HTML/CSS, JavaScript, and SQL
 
-# Live Project:
+## Project Video:
 
 
-# Project Video:
-
-
-# Implementation:
+## Implementation:
 (Initial steps can be skipped in using CS50 IDE)
 1. Install Python
 2. Install pip
