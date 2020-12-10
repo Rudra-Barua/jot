@@ -1,7 +1,9 @@
 ## Project Title: Jot
 # By: Rudra Barua
 Course: CS50 @ Harvard
+
 Assignment: Final Project
+
 Contact: rudrabarua@college.harvard.edu
 
 ## Description:
