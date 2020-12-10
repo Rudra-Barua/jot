@@ -3,6 +3,5 @@ Flask
 Flask-Session
 requests
 bs4
-urllib.request
 gunicorn
 psycopg2
