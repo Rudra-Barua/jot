@@ -23,7 +23,8 @@ The Python framework Flask was used to create this web application.
 One of the main reasons I choose to use Flask was because I would get to use the powerful tools and libraries I am already familiar with in Python.
 Flask also allowed me to constantly build and deploy. This was especially helpful when I was coming across bug after bug. Quickly deployment allowed for quick debugging.
 Flask is also works very well with the Jinja2 framework template which I heavily used through the project. 
-Overall the framework allowed me to go fast and experiment without much worry.
+Overall the framework allowed me to go fast and experiment without much worry. I used a sqlite db since it the SQL import from the CS50 library made it easy to work with 
+SQL databases and perform queries. Since the Python was almost exactly how SQL queries would normally be written, it was a no brainner to implement them in application.py.
 
 ## Breakdown of Files:  
 
