@@ -27,11 +27,14 @@ Overall the framework allowed me to go fast and experiment without much worry.
 
 ## Breakdown of Files:  
 
-1. So lets start with our database jot.db. It consists of three tables
+1. So lets start with our database jot.db. It consists of three tables:
+
 a. users: the users table keeps track of all the user's ids, users, and hashed passwords
+
 b. history: the history tables has columns to keep track of the user id that created the note, the date/time of when the note was taken, the text of the note itself,
 whether or not the note has been deleted (in case of future implementation of recovering trashed notes), 
 the url of the website being noted on, and the unique id for the record itself
+
 c. todos: the todo table has columns to keep track of the user id that created the todo, the text of the todo, the url of the site, the date/time of the due date, 
 completion of the todo (not implement but kept in case), if the todo was delete or not, and a unique id for the todo itself
 
